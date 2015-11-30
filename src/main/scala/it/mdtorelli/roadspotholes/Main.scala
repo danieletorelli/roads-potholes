@@ -14,7 +14,7 @@ object Main {
     val volume = road.totalWaterVolume    // Compute total water wolume between the road peeks
 
     println(s"Road: $road")
-    println(s"Peaks: $peaks")
+    println(s"Peaks: ${peaks.mkString("[", ", ", "]")}")
     println(s"Total water volume: $volume")
   }
 

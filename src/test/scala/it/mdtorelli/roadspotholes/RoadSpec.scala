@@ -73,7 +73,7 @@ class RoadSpec extends FlatSpec with Matchers {
   }
 
   it should "be print-friendly" in {
-    road.toString === "3, 5, 8, 4, 3, 5, 2, 7, 3, 2, 4"
+    road.toString === "[3, 5, 8, 4, 3, 5, 2, 7, 3, 2, 4]"
   }
 
   it should "not be writable" in {

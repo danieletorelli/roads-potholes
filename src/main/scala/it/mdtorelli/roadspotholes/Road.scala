@@ -23,7 +23,7 @@ class Road(val tiles: Seq[Tile]) {
     })
   }
 
-  override def toString = tiles.toString
+  override def toString = tiles.mkString("[", ", ", "]")
 
   def tileAt(idx: Int): Option[Tile] = if (tiles.isDefinedAt(idx)) Some(tiles(idx)) else None
 
